@@ -1,0 +1,8 @@
+id,name,cost,image,category,gsm,material,length,brand_status
+1,Printed Paper Roll,52,OnePlus_9_Pro_12256.jpg,Paper Roll,Less than 80 GSM,Normal Paper,20 M,1
+2,20 M ATM Thermal Paper Roll,385,OnePlus_9_Pro_8128.jpg,Paper Roll,55 GSM,Thermal Paper,20 M,1
+3,POS Machine Thermal Paper Roll,55,OnePlus_9_12256.jpg,Paper Roll,Less than 80 GSM,Normal Paper,20 M,1
+4,ATM White Thermal Paper Roll,55,OnePlus_8_Pro_12256.jpg,Paper Roll,Less than 80 GSM,Thermal Paper,15 M,1
+5,Pre-Printed Thermal Paper Roll,55,OnePlus_7T_Pro_McLaren_Edition.jpg,Paper Roll,100 GSM,Normal Paper,15 M,1
+6,Printed Thermal Paper Roll,55,Apple_iPhone_12_Pro_Max.jpg,Paper Roll,Less than 80 GSM,Thermal Paper,30 M,1
+7,White Paper Billing Roll,42,Apple_iPhone_12_Pro.jpg,Paper Roll,Less than 80 GSM,Normal Paper,15 M,1

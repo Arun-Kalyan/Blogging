@@ -1,0 +1,17 @@
+{
+  "name": "total_billing_systems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo_db.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

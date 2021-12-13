@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+
+    ul {
+        text-align: left;
+        font-family: 'Amiri'
+    }
+
+    h2 {
+        text-align: left;
+        font-family: 'Sofia'
+    }
+
+    h1 {
+        font-family: 'Sofia'
+    }
+
+    h5 {
+        font-family: 'Amiri'
+    }
+</style>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('customersCtrl1', function ($scope, $http, MyFactoryService) {
+        
+        $http.get("thor_mysql.php")
+            .then(function (response) { $scope.names = response.data.records; 
+            console.log($scope.names);
+            });
+        });    
+//this.num =0;       
+   
+</script>
+
+
+
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large  w3-hover-white"><i
+                    class="fa fa-user w3-margin-right w3-hover-white"></i>UserName</a>
+            <div class="w3-right w3-hide-small">
+                <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+               
+
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">My Blogs
+                    </a>
+                <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Add Blog</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white"><i
+                        class="fa fa-sign-out w3-margin-right"></i>Logout</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+        <br />
+        <br>
+        <br>
+        <!-- <h2 align="center">Run 'N' Gun</h2> -->
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10">
+            <br />
+            <div class="row filter_data">
+
+                <div ng-app="myApp" ng-controller="customersCtrl1">
+
+                    
+                        <div class="col-md-12">
+                             <div class="box" ng-controller = "productsCtrl">
+                                <!-- <img ng-src="images/Others/{{x.Image}}" alt="" class="img-responsive">
+                                <br>  -->
+                                <h3 style="padding:3px;" align="center"><strong><a href="#">Title :
+                                            {{x.Title}}</a></strong></h3>
+                                <h3 style="text-align:center;" class="text-danger"><b>Content : {{x.Content}}</h3>
+                                    <h3 style="text-align:center;" class="text-danger"><b>Author : {{x.Author}}</h3>
+                                  
+                            </div>
+
+                        </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        #loading {
+            text-align: center;
+            background: url('loader.gif') no-repeat center;
+            height: 150px;
+        }
+
+        .box {
+            border: 1px solid #ccc !important;
+            border-radius: 5px !important;
+            padding: 0px !important;
+            margin-bottom: 20px !important;
+            height: 900px !important;
+            box-shadow: 3px 5px 8px 10px black;
+        }
+    </style>
+
+
+   
+
+</body>
+
+</html>

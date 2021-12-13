@@ -1,0 +1,8 @@
+id,name,cost,image,gsm,material,length,brand_status
+1,Printed Paper Roll,52,b1.png,Less than 80 GSM,Normal Paper,20 M,1
+2,20 M ATM Thermal Paper Roll,385,b2.png,55 GSM,Thermal Paper,20 M,1
+3,POS Machine Thermal Paper Roll,55,b3.png,Less than 80 GSM,Normal Paper,20 M,1
+4,ATM White Thermal Paper Roll,55,b4.png,Less than 80 GSM,Thermal Paper,15 M,1
+5,Pre-Printed Thermal Paper Roll,55,b5.png,100 GSM,Normal Paper,15 M,1
+6,Printed Thermal Paper Roll,55,b2.png,Less than 80 GSM,Thermal Paper,30 M,1
+7,White Paper Billing Roll,42,b4.png,Less than 80 GSM,Normal Paper,15 M,1
